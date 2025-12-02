@@ -200,7 +200,7 @@ export default function Orders() {
                 <tr key={o.id}>
                   <td>{customers.find((c) => c.id === o.customerId)?.name || "Unknown"}</td>
                   <td>{o.product}</td>
-                  <td>{currency}{o.price}</td>
+                  <td>{currency}{Number(o.price).toLocaleString()}</td>
                   <td>{o.status}</td>
                   <td>{o.date?.toDate ? o.date.toDate().toLocaleDateString() : "N/A"}</td>
                   <td>

@@ -156,7 +156,7 @@ export default function Customers() {
                   <td>{c.whatsapp}</td>
                   <td>{c.notes || "-"}</td>
                   <td>{c.totalOrders}</td>
-                  <td>{currency}{c.totalSpent}</td>
+                  <td>{currency}{Number(c.totalSpent).toLocaleString()}</td>
                   <td>
                     <Button
                       variant="danger"

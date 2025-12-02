@@ -78,7 +78,7 @@ export default function DashboardHome() {
               <Card style={{ background: "#1B263B", border: "1px solid #415A77" }}>
                 <Card.Body>
                   <Card.Title className="show-text">Total Sales</Card.Title>
-                  <h3 className="show-text">{currency}{totalSales}</h3>
+                  <h3 className="show-text">{currency}{totalSales.toLocaleString()}</h3>
                 </Card.Body>
               </Card>
             </Col>
@@ -115,7 +115,7 @@ export default function DashboardHome() {
                             <tr key={o.id}>
                               <td>{customers.find((c) => c.id === o.customerId)?.name || "Unknown"}</td>
                               <td>{o.product}</td>
-                              <td>{currency}{o.price}</td>
+                              <td>{currency}{Number(o.price).toLocaleString()}</td>
                               <td>{o.status}</td>
                               <td>{o.date?.toDate ? o.date.toDate().toLocaleDateString() : "N/A"}</td>
                             </tr>
