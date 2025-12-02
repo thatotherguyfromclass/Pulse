@@ -122,7 +122,7 @@ export default function Customers() {
 
         <Col xs={6} md={2} className="ms-auto">
           <Button
-            style={{ background: "#6C63FF", border: "none", fontWeight: "bold", height: "38px" }}
+            style={{ background: "#6C63FF", border: "none", fontWeight: "bold", height: "38px", whiteSpace: "nowrap" }}
             onClick={() => setShowModal(true)}
             className="w-100"
           >
