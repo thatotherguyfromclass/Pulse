@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make placeholder visible */
+.custom-input::placeholder {
+  color: #A9B2C3;
+  opacity: 1;
+}
+.show-text{
+  color: #A9B2C3;
+  opacity: 1;
+}
+.navbar-brand{
+  color: #6C63FF;
+}
